@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+html{
+    font-size: 62.5%;
+}
+body {
+	font: 1.6rem Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+    line-height: 1.6;
+    letter-spacing: .1rem;
+    text-rendering: optimizeLegibility;
+    display: grid;
+    grid-template-rows: repeat(auto 1fr auto);
+    min-height: 100vh;
+}
+h1,h2,h3{
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    color: #222;
+    font-size: inherit;
+}
+header {
+	background-color: #304456;
+	color: #FFF;
+	padding: 2rem;
+	text-align: center;
+}
+header h1{
+    font-family: 'Lobster';
+    font-size: 5rem;
+    text-shadow: -.2rem .2rem 0 #222;
+}
+
+.container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	padding: 2rem;
+}
+
+.image-container {
+	flex: 1;
+	margin-right: 2rem;
+}
+
+.image-container img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+.text-container {
+	flex: 1;
+}
+.button-favorites {
+    border: 0;
+    line-height: 4rem;
+    padding: 0 20px;
+    font-size: inherit;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: rgba(220, 0, 0, 1);
+    background-image: linear-gradient(to top left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+}
+
+.button-favorites:hover {
+    background-color: rgba(255, 0, 0, 1);
+}
+
+.button-favorites:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, 0.6), inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
+
+article h2 {
+	color: #a43946;
+	font-size: 2.4rem;
+	margin-top: 2rem;
+    font-family: 'Lobster';
+}
+
+
+
+footer {
+    
+    bottom: 0;
+    left: 0;
+	background-color: #304456;
+	color: #FFF;
+	padding: 2rem;
+	text-align: center;
+    
+}
+
+/* responsive */
+@media screen and (max-width: 100rem){
+    .container, 
+    .image-container, .text-container{
+        display: block;
+        margin: 0;
+    }
+    p{
+        text-align: justify;
+    }
+    footer{
+        position: static;
+        display: block;
+        width: auto;
+    }
+    footer p{
+        text-align: center;
+    }
+    header h1{
+        font-size: 2.5rem;
+    }
+    
+}
